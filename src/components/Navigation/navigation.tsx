@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+// import * as styles from './styles.css'
+
 const styles = {
   navigation: {
     display: 'flex',
@@ -33,7 +35,10 @@ export default () => (
         <Link style={{...styles.navigationItemLink}} to="/">Home</Link>
       </li>
       <li style={{...styles.navigationItem}}>
-        <Link style={{...styles.navigationItemLink}} to="/blog/">Blog</Link>
+        <Link style={{...styles.navigationItemLink}} to="/projects/">Projects</Link>
+      </li>
+      <li style={{...styles.navigationItem}}>
+        <Link style={{...styles.navigationItemLink}} to="/contact/">Contact</Link>
       </li>
     </ul>
   </nav>

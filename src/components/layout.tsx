@@ -1,7 +1,7 @@
 import React from 'react'
 import './base.css'
 import Container from './container'
-import Navigation from './navigation'
+import Navigation from './Navigation/navigation'
 
 class Template extends React.Component {
   render() {
