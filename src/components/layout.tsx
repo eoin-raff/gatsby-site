@@ -6,7 +6,7 @@ import Hero, {IHero} from "./Hero";
 
 interface ILayout {
   children: (ReactNode | ReactElement)[] | (ReactNode | ReactElement);
-  hero: IHero;
+  hero?: IHero;
 }
 
 const Layout: FC<ILayout> = ({ children, hero }) => {
@@ -15,7 +15,7 @@ const Layout: FC<ILayout> = ({ children, hero }) => {
     {/* Helment - SEO details */}
       <Navigation />
       <main>
-        <Hero {...hero}/>
+        {hero && <Hero {...hero}/>}
         {children}
         </main>
       <Footer />
