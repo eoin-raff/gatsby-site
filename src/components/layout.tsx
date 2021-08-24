@@ -1,19 +1,26 @@
-import React from 'react'
-import './base.css'
-import Container from './container'
-import Navigation from './Navigation/navigation'
+import React, { ReactElement, ReactNode, FC } from "react";
+import "./base.css";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+import Hero, {IHero} from "./Hero";
 
-class Template extends React.Component {
-  render() {
-    const { children } = this.props
-
-    return (
-      <Container>
-        <Navigation />
-        {children}
-      </Container>
-    )
-  }
+interface ILayout {
+  children: (ReactNode | ReactElement)[] | (ReactNode | ReactElement);
+  hero: IHero;
 }
 
-export default Template
+const Layout: FC<ILayout> = ({ children, hero }) => {
+  return (
+    <>
+    {/* Helment - SEO details */}
+      <Navigation />
+      <main>
+        <Hero {...hero}/>
+        {children}
+        </main>
+      <Footer />
+    </>
+  );
+};
+
+export default Layout;
