@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { IHero } from "../components/Hero";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Section from "../components/Section"
 
 const Projects: FC = () => {

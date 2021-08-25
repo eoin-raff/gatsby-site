@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { IHero } from "../components/Hero";
 import Section from "../components/Section";
 import { makeStyles, Typography } from "@material-ui/core";

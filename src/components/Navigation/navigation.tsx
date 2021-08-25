@@ -16,6 +16,8 @@ const useStyles = makeStyles(() => {
       position: "fixed",
       width: "100%",
       backgroundColor: "#4b3da5",
+      display: 'flex',
+      justifyContent: 'center'
 
     },
     light: {

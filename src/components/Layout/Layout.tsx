@@ -1,15 +1,15 @@
 import React, { ReactElement, ReactNode, FC } from "react";
-import "./base.css";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
-import Hero, {IHero} from "./Hero";
+import "../base.css";
+import Navigation from "../Navigation";
+import Footer from "../Footer";
+import Hero, {IHero} from "../Hero";
 
 interface ILayout {
   children: (ReactNode | ReactElement)[] | (ReactNode | ReactElement);
   hero?: IHero;
 }
 
-const Layout: FC<ILayout> = ({ children, hero }) => {
+export const Layout: FC<ILayout> = ({ children, hero }) => {
   return (
     <>
     {/* Helment - SEO details */}
@@ -22,5 +22,3 @@ const Layout: FC<ILayout> = ({ children, hero }) => {
     </>
   );
 };
-
-export default Layout;

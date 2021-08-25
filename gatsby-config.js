@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful starter",
+    title: "Eoin Rafferty - Developer",
   },
-  pathPrefix: "/gatsby-contentful-starter",
+  pathPrefix: "/eoin-raff",
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
